@@ -221,26 +221,37 @@
 // twelfth exersice (закончить)
 
 // const addDigits = (n) => {
-//     let result = 0;
+    // let result = 0;
 
-//     const exam = (n) => {
-//         let str = String(n);
-//         let arr = str.split('')
-//         console.log(arr)
-//         n *= 0;
+    // const exam = (n) => {
+    //     let str = String(n);
+    //     let arr = str.split('')
+    //     console.log(arr)
+    //     n *= 0;
     
-//         for ( let i = 0; i < arr.length; i++) {
-//             n += Number(arr[i]);
-//             // console.log(n)
-//         }
-//         return console.log(n);
-//     }
-//      exam(n);
+    //     for ( let i = 0; i < arr.length; i++) {
+    //         n += Number(arr[i]);
+    //         console.log(n)
+    //     }
+    //     return console.log(n);
+    // }
+    //  exam(n);
 
-//     if (n > 9) {
-//         exam(n);
+    // if (n > 9) {
+    //     exam(n);
+    // }
+    // return n;
+
+//     let result = 0;
+//     let str = String(n);
+
+//     for (let i = 0; i < str.length; i++) {
+//         let a = 0;
+//         result += 12345 % 10
+//         n -= result
+//         n / 10
+//         console.log(n)
 //     }
-//     return n;
 // }
 
 // console.log(addDigits(12345));
@@ -253,3 +264,94 @@
 
 
 // console.log(solution('hello world!'))
+
+
+// Arrays
+
+
+// fourteenth exersice
+
+// const getWeekends = (str) => {
+//     let long = ['saturday', 'sunday'];
+//     let short = ['sat', 'sun'];
+
+//     if (str === 'short') {
+//         return short;
+//     } else {
+//         return long;
+//     }
+// }
+
+// console.log(getWeekends('short'));
+// console.log(getWeekends('long'));
+
+// fifteenth exersice
+
+// const swap = (a) => {
+//     let arrStr = []
+//     let arrRev = [];
+//     let arrEnd = [];
+
+//     if (a.length < 2) {
+//         return a
+//     } else if (a.length == 2){
+//        return arrRev = a.reverse();
+//     } else {
+//         arrStr = a.slice(0, 1)
+//         arrEnd = a.slice(-1)
+//         arrRev = a.slice(1, a.length - 1)
+//         arrRev.unshift(arrEnd[0])
+//         arrRev.push(arrStr[0])
+//        return arrRev;
+//     }
+
+// }
+
+// console.log(swap(['aaa']))
+// console.log(swap(['aaa', 'bbb']))
+// console.log(swap(['aaa', 'bbb', 'ccc', 'ddd']))
+
+// sixteenth exersice
+
+// const addPrefix = (arr, prefix) => {
+//     let newNames = []
+
+//     for (let i = 0; i < arr.length; i++) {
+//         let index = prefix + ' ' +  arr[i]
+//         console.log(index)
+//         newNames.unshift(index)
+//     }
+//     return newNames;
+
+// }
+
+// console.log(addPrefix(['john', 'smith', 'karl'], 'Mr'))
+
+// seventeenth exersice 
+
+// const arrays = (arr) => {
+//     let a = []
+
+//     for (let i = 0; i < arr.length; i++) {
+//         a[i] = arr[(arr.length - 1) - i]
+//         console.log(a)
+//     }
+//     return a;
+// }
+
+// console.log(arrays(['john', 'smith', 'karl', 'ihar']))
+
+// eighteenth exersice 
+
+// const arrays = (arr) => {
+//     let sum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 3 == 0) {
+//            sum += arr[i];
+//         } 
+//     }
+//     return sum;
+// }
+
+// console.log(arrays([8, 9, 21, 19, 18, 22, 7]))
+// console.log(arrays([2, 0, 17, 3, 9, 15, 4]))
